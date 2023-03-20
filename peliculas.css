@@ -1,0 +1,224 @@
+
+
+ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-right: 20px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #ff69b4;
+}
+
+.logo-container:hover img {
+  filter: brightness(0) invert(1);
+}
+
+
+/* Estilos para la navegación */
+nav {
+   background-color: #ff69b4;
+   padding: 10px 0;
+   text-align: center;
+}
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+}
+nav li {
+   margin: 0 10px;
+}
+nav a {
+   color: #fff;
+   text-decoration: none;
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   padding: 10px;
+   border-radius: 10px;
+   transition: all 0.3s ease-in-out;
+}
+nav a:hover {
+   background-color: #fff;
+   color: #ff69b4;
+}
+
+/* Estilos para el contenido principal */
+main {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo del borde */
+.title-border {
+  border: 2px solid pink;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Animación de letras saltando */
+.title-border span {
+  animation-name: jump;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+section {
+   margin: 40px 0;
+}
+
+h2 {
+    color:#ff69b4;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;'
+}
+section p {
+   font-size: 18px;
+   line-height: 1.5;
+   color: #555;
+}
+
+h3 {
+   color:#ff69b4;
+   font-family: 'Roboto', sans-serif;
+   text-align: center;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div#video-container {
+   background-color: pink;
+}
+
+.gallery {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 30px;
+}
+.image-barbie {
+   margin: 10px;
+   max-width: 300px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Peliculas img {
+   margin-right: 20px;
+   margin-bottom: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+   transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.Peliculas {
+   display: flex;
+   overflow-x: scroll;
+   scroll-behavior: smooth;
+}
+
+.carousel__button {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: none;
+   border: none;
+   font-size: 2rem;
+   color: #ccc;
+   cursor: pointer;
+}
+
+.carousel__button--left {
+   left: 0;
+}
+
+.carousel__button--right {
+   right: 0;
+}
+
+/* Estilos para la animación de máquina de escribir */
+.maquina {
+  display: inline-block;
+  font-size: 14px;
+  font-family: monospace;
+  overflow: hidden; /* Para ocultar las letras al inicio */
+  border-right: 0.15em solid orange; /* Linea naranja simulando el cursor de la máquina de escribir */
+  white-space: nowrap; /* Para que el texto no se parta */
+  letter-spacing: 0.15em; /* Espacio entre letras */
+  animation: maquina-escribir 1s steps(40, end) forwards;
+}
+
+/* Keyframes para la animación de máquina de escribir */
+@keyframes maquina-escribir {
+  from {
+    width: 0; /* El texto comienza sin ancho */
+  }
+  to {
+    width: 100%; /* Se muestra todo el texto */
+  }
+}
+
+
+/* Estilos para el pie de página */
+footer {
+   background-color: #ff69b4;
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+}
+
+.zoom {
+  transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+
